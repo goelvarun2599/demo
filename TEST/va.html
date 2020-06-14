@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<title>this is a dummy page</title>
+<body>
+
+
+
+
+<style>
+h1{color:red;
+background-color:#FFFF00;}
+.cn{
+border-color:green;
+border-width:5px;
+border-style:solid;}
+</style>
+
+
+
+<h1>HELLO GUYS! <br> </h1>
+<h4 >let's play a game <br>
+click try button</h4>
+<!--<input type="text" class="cn" placeholder="tell your name to know about you" required>-->
+
+<button onclick="fun()">try</button>
+<h3 id="demo"></h3>
+
+<script>
+
+function fun()
+{
+	
+
+var person=prompt("please enter your name","varun");
+//var choice=prompt("please enter your choice");
+
+
+let a=Math.floor(Math.random()*4);
+if(a==0){
+document.getElementById("demo").innerHTML="Hello  "+person+" ,you are a good human";}
+else if(a==1)
+{
+document.getElementById("demo").innerHTML="Hello  "+person+" ,you are a monkey";}
+
+else if(a==2)
+{
+document.getElementById("demo").innerHTML="Hello  "+person+" ,you are a iodiot human";}
+
+else 
+{
+document.getElementById("demo").innerHTML="Hello  "+person+" ,you are a donkey";}
+
+}
+</script>
+
+
+
+
+</body>
+</head>
